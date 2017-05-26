@@ -13,13 +13,13 @@
         diskExpiryThreadIntervalSeconds="120"
         memoryStoreEvictionPolicy="LRU"
         />
-    
+    <!-- diskPersistent="false" cuando apago la aplicacion se guarda todo en disco y cuando la prendo vuelve a estar (si esta en true)-->
     <cache name="org.hibernate.cache.StandardQueryCache"
         eternal="false"
         timeToLiveSeconds="120"
         overflowToDisk="true"/>
 
-    <!--
+    <!-- ACA CONFIGURO A NIVEL CLASE 
     <cache  name="javaapplicationhibernate.bo.Cliente"
         maxElementsInMemory="300"
         eternal="false"
